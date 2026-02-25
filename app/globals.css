@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0f172a;
+  --foreground: #0f172a;
+}
+
+body {
+  @apply bg-slate-950 text-slate-50 antialiased;
+}
+
+main {
+  @apply min-h-screen;
+}
+
+.container {
+  @apply mx-auto max-w-6xl px-4 sm:px-6 lg:px-8;
+}
+
+.section-padding {
+  @apply py-12 md:py-20;
+}
+
+.glass-card {
+  @apply rounded-3xl border border-white/10 bg-slate-900/60 shadow-card backdrop-blur;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-lg shadow-primary/40 transition hover:-translate-y-0.5 hover:bg-primary/90 hover:shadow-xl hover:shadow-primary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950;
+}
+
+.btn-outline {
+  @apply inline-flex items-center justify-center rounded-full border border-white/20 bg-transparent px-6 py-3 text-sm font-semibold text-slate-50 shadow-sm transition hover:-translate-y-0.5 hover:border-white/40 hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950;
+}
